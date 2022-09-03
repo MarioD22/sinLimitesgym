@@ -42,12 +42,17 @@ button {
     width: 200px;
     height: 50px;
     border-radius: 15px;
+   
 }
 
 button:hover {
 
     background-color: blueviolet;
 }
+
+div{display: flex;
+    justify-content: center;}
+
 
 .btnEnlace {
     display: inline-block;

@@ -1,118 +1,126 @@
 body {
-    background-color: black;
-    margin: 20px;
-    padding: 40px;
-    color: white;
+	background-color: black;
+	margin: 20px;
+	padding: 40px;
+	color: white;
 }
 
 img {
-    width: 50%;
-    height: 50%;
-    border-radius: 39px;
-    /*para poder mover la img se pone block*/
-    display: block;
-    margin: 0px auto;
-
+	width: 50%;
+	height: 50%;
+	border-radius: 39px;
+	/*para poder mover la img se pone block*/
+	display: block;
+	margin: 0px auto;
 }
 
 h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 50px;
-    /* para darle a un texto grosor de trazo y color*/
-    -webkit-text-stroke: 2px #3f51b5;
-    /*pone transparente el texto yd eja el borsde*/
-    /* color: transparent;*/
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	text-align: center;
+	font-size: 50px;
+	/* para darle a un texto grosor de trazo y color*/
+	-webkit-text-stroke: 2px #3f51b5;
+	/*pone transparente el texto yd eja el borsde*/
+	/* color: transparent;*/
 }
 
-
 p {
-    text-align: center;
+	text-align: center;
 }
 
 span {
-    color: red;
-    border: 1px solid red;
-    margin: 0px 3px 0px 0px;
+	color: red;
+	border: 1px solid red;
+	margin: 0px 3px 0px 0px;
 }
 
-button {
-    display: inline-block;
-    background-color: white;
-    width: 200px;
-    height: 50px;
-    border-radius: 15px;
-   
+button{
+	display: inline-block;
+    color: black;
+	background-color: white;
+	width: 200px;
+	height: 50px;
+	border-radius: 15px;
+	transition: all 1s;
 }
+
 
 button:hover {
-
-    background-color: blueviolet;
+	
+    color: white;
+	background-color: blue;
+	border-radius: 0px;
+    width: 200px;
+    height:60px;
+    
+	/*transform: rotateX(360deg)*/
 }
 
-div{display: flex;
-    justify-content: center;}
+button a:hover{
+    color: white;
+ } 
 
+
+
+div {
+	display: flex;
+	justify-content: center;
+}
 
 .btnEnlace {
-    display: inline-block;
-    ;
-    background-color: white;
-    width: 200px;
-    height: 50px;
-    border-radius: 15px;
-    text-align: center;
-
-
+	display: inline-block;
+	background-color: white;
+	width: 200px;
+	height: 50px;
+	border-radius: 15px;
+	text-align: center;
 }
 
 .enlace {
-    display: inline;
-    opacity: 0.5;
-    transition: opacity 0.5s;
-    background-color: white;
+	display: inline;
+	opacity: 0.5;
+	transition: opacity 0.5s;
+	background-color: white;
 }
 
 .enlace:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .barraSeparadora {
-    background-color: blue;
-    padding: 12px 0px 0px 0px;
-    text-align: center;
-    width: 100%;
-    height: 31px;
+	background-color: blue;
+	padding: 12px 0px 0px 0px;
+	text-align: center;
+	width: 100%;
+	height: 31px;
 }
 
 /*propiedad de la tabla*/
 table {
-    font-size: 30px;
-    border: 1px solid gray;
-    border-spacing: 15px;
-    border-radius: 15px;
-    margin: 0px auto;
-    /*margin auto para que centre la tabla en la pagina*/
+	font-size: 30px;
+	border: 1px solid gray;
+	border-spacing: 15px;
+	border-radius: 15px;
+	margin: 0px auto;
+	/*margin auto para que centre la tabla en la pagina*/
 }
 
 /*propiedad de titulos table head -encabezado*/
 th {
-    color: red;
-    background-color: rgb(209, 202, 202);
-    padding: 10px;
-
+	color: red;
+	background-color: rgb(209, 202, 202);
+	padding: 10px;
 }
 
 /*propiedad de los datos table data */
 td {
-    padding: 10px;
-    border: 1px solid gray;
-
+	padding: 10px;
+	border: 1px solid gray;
 }
 
 /*poso por encima de cada celda celda table row*/
 tr:hover {
-    background-color: blue;
-    color: white;
-    cursor: pointer;
+	background-color: blue;
+	color: white;
+	cursor: pointer;
 }

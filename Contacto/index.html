@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styleForm.css" />
+		<title>Practicas Cronos</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleForm.css">
-    <title>Practicas Cronos</title>
-</head>
+	<body>
+		<h1>SIN LIMITES GYM</h1>
+    
+		<form action="">
+			Nombre
+			<input type="text" />
+			Apellido
+			<input type="text" />
 
-<body>
-    <h1> SIN LIMITES GYM</h1>
+			Mensaje
+			<textarea rows="10">Escriba aquí su consulta</textarea>
+			Genero:
+			<select>
+				<option>--Seleccione su Genero</option>
+				<option>Hombre</option>
+				<option>Mujer</option>
+				<option>X</option>
+				<option>No sabe no contesta</option>
+				<!-- si le pongo dentro de option "selected" toma ese como primera opcion-->
+			</select>
 
-
-    <form action="">
-        Nombre
-        <input type="text">
-        Apellido
-        <input type="text">
-
-        Mensaje
-        <textarea rows="10">Escriba aquí su consulta</textarea>
-        Genero:
-        <select >
-            <option >--Seleccione su Genero</option>
-            <option >Hombre</option>
-            <option >Mujer</option>
-            <option >X</option>
-            <option >No sabe no contesta</option>
-            <!-- si le pongo dentro de option "selected" toma ese como primera opcion-->
-        </select>
-
-        <button type="submit">Enviar Formulario</button>
-        <button type="reset">Borrar Formulario</button>
-        <button><a href="../index.html">Volver a Pagina Principal</a></button>
-    </form>
-
-</body>
-
+			<button class="btnAnimado" type="submit">Enviar Formulario</button>
+			<button class="btnAnimado" type="reset">Borrar Formulario</button>
+			<button class="btnAnimado"><a href="../index.html">Volver a Pagina Principal</a></button>
+		</form>
+	</body>
 </html>

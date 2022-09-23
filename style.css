@@ -3,6 +3,7 @@ body {
 	margin: 20px;
 	padding: 40px;
 	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -12,6 +13,7 @@ img {
 	/*para poder mover la img se pone block*/
 	display: block;
 	margin: 0px auto;
+	margin-bottom: 20px;
 }
 
 h1 {
@@ -42,6 +44,7 @@ button{
 	height: 50px;
 	border-radius: 15px;
 	transition: all 1s;
+	
 }
 
 
@@ -56,10 +59,31 @@ button:hover {
 	/*transform: rotateX(360deg)*/
 }
 
-button a:hover{
-    color: white;
- } 
 
+
+a  {display: inline-block;
+    color: black;
+	background-color: white;
+	width: 200px;
+	height: 25px;
+	border-radius: 15px;
+	transition: all 1s;   
+    text-align: center;
+	padding: 15px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+a:hover {
+	
+    color: white;
+	background-color: blue;
+	border-radius: 0px;
+    width: 200px;
+    height:30px;
+    
+	/*transform: rotateX(360deg)*/
+}
 
 
 div {
@@ -93,6 +117,8 @@ div {
 	text-align: center;
 	width: 100%;
 	height: 31px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 /*propiedad de la tabla*/
@@ -124,3 +150,12 @@ tr:hover {
 	color: white;
 	cursor: pointer;
 }
+
+
+footer{ margin-top: 20px;
+	   text-align: center;
+	   font-size: 25px;
+	   font-family: 'Courier New', Courier, monospace;
+       color: white;
+	   background-color: blue;
+	}

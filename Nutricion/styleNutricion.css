@@ -4,6 +4,7 @@ body {
     margin: 20px;
     padding: 40px;
     color: white;
+    /*border: 1px solid yellow;*/
 }
 
 h1 {
@@ -23,16 +24,17 @@ p{ text-align: justify;
 }
 
 section {
-    border: 1px solid red;
-    width: 48%;
-    margin: 0px auto;    
-    display: inline-block;
-    vertical-align: top;
+    /*border: 1px solid red;*/
+    width: 100%;
+    
   }
   
   article{
-border: 1px solid green;
-
+/*border: 1px solid green;*/
+width: 48%;
+margin-bottom: 30px;
+display: inline-block;
+vertical-align: top;
   
 }
 

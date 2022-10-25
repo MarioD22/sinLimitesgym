@@ -20,6 +20,7 @@ body {
 nav{ float: right;
 }
 
+.actividades{display: none;}
 
 
 
@@ -194,8 +195,10 @@ footer{ margin-top: 20px;
 
 		header{width: 100%;
 			   height: 400px;
-			padding: 10px;
+			  padding: 10px;
 	   }
+	 .actividades{display: block;}  
+
 	.logoSinLimites	{
 	  position: relative;
 	  display: block;
@@ -204,10 +207,10 @@ footer{ margin-top: 20px;
 
    nav{float:none;}		
    nav a{ 
-	position: relative;     
-	
+	position: relative;   	
 	width: 100%;
-	height: 100px;
+	height: 20px;
+	margin-top: 5px;
           }
 	
 	}

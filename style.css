@@ -1,24 +1,27 @@
 body {
-	background-color: black;
-	margin: 20px;
-	padding: 40px;
+	/*background-color: black;*/
+	background-image:url(imagenes/Fondo.jpg);
+	border-radius: 20px;
+	margin: 20px 20px 0px 20px;
+    padding: 40px 40px 4px 40px;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-	width: 50%;
-	height: 50%;
-	border-radius: 39px;
-	/*para poder mover la img se pone block*/
-	display: block;
-	margin: 0px auto;
-	margin-bottom: 20px;
+
+.logoSinLimites{ width: 180px;
+	             height: 80px;
+				 position: relative;
+				 float:left;
+				 border-radius: 1px;
 }
 
-.logoSinLimites{ width: 100%;
-	height: 300px;
+
+nav{ float: right;
 }
+
+
+
 
 h1 {
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -28,6 +31,18 @@ h1 {
 	-webkit-text-stroke: 2px #3f51b5;
 	/*pone transparente el texto yd eja el borsde*/
 	/* color: transparent;*/
+}
+
+
+header{width: 100%;
+	 height: 100px;
+	 padding: 10px;
+	 position:sticky;
+	 top: 0;
+}
+.fraseDelDia{
+            display: block;
+
 }
 
 p {
@@ -65,7 +80,9 @@ button:hover {
 
 
 
-a  {display: inline-block;
+a  {position: relative;
+	top: 0px;
+	display: inline-block;
     color: black;
 	background-color: white;
 	width: 200px;
@@ -157,9 +174,40 @@ tr:hover {
 
 
 footer{ margin-top: 20px;
+	   height: 100px;
 	   text-align: center;
+	   opacity: 0.5;
 	   font-size: 25px;
 	   font-family: 'Courier New', Courier, monospace;
        color: white;
 	   background-color: blue;
+	}
+
+	@media(max-width:600px){
+
+   div{ display: block;}
+    table {display: none;}
+
+	body {		
+		background-image: none;
+	    background-color: blue;}
+
+		header{width: 100%;
+			   height: 400px;
+			padding: 10px;
+	   }
+	.logoSinLimites	{
+	  position: relative;
+	  display: block;
+	  width: 100%;
+	  height: 100px;}
+
+   nav{float:none;}		
+   nav a{ 
+	position: relative;     
+	
+	width: 100%;
+	height: 100px;
+          }
+	
 	}

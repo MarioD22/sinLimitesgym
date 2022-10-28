@@ -1,5 +1,4 @@
 body {
-	/*background-color: black;*/
 	background-image: url(imagenes/Fondo.jpg);
 	border-radius: 20px;
 	margin: 20px 20px 0px 20px;
@@ -13,7 +12,6 @@ body {
 porque la tabla se muestra en la pantalla principal*/
 .actividades {
 	display: none !important;
-
 }
 
 .logoSinLimites {
@@ -23,12 +21,12 @@ porque la tabla se muestra en la pantalla principal*/
 	float: left;
 	border-radius: 1px;
 	margin-left: 20px;
-    margin-top: 8px;
+	margin-top: 8px;
 }
 
 header {
 	background-color: white;
-    border-radius: 30px;
+	border-radius: 30px;
 	width: 100%;
 	height: 100px;
 	padding: 10px;
@@ -48,7 +46,7 @@ header {
 	top: 18px;
 	display: inline-block;
 	color: black;
-	background-color:#e1d6d6;
+	background-color: #e1d6d6;
 	width: 80px;
 	height: 25px;
 	border-radius: 15px;
@@ -66,12 +64,9 @@ header {
 	border-radius: 0px;
 	width: 200px;
 	height: 30px;
-	
 }
 
-
 /*inicio de frase del día*/
-
 
 .fraseDelDia {
 	display: block;
@@ -80,10 +75,10 @@ header {
 
 p {
 	text-align: center;
-    margin: 0px auto;
-    padding: 20px;
+	margin: 0px auto;
+	padding: 20px;
 	margin-top: 10px;
-	}
+}
 
 span {
 	color: red;
@@ -91,11 +86,7 @@ span {
 	margin: 0px 3px 0px 0px;
 }
 
-
 /*Fin de frase del día*/
-
-
-
 
 /*Inicio  de la tabla*/
 table {
@@ -128,54 +119,43 @@ tr:hover {
 	cursor: pointer;
 }
 
-
 /*Fin de la tabla*/
-
 
 /*inicio de logo*/
 
-.logoWasap{
-	
+.logoWasap {
 	position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 150px;
-    height: 71px;
-    float: left;
-    z-index: 11;
-	transition: all 0.3s;/*ver*/
+	bottom: 0px;
+	right: 0px;
+	width: 150px;
+	height: 71px;
+	float: left;
+	z-index: 11;
+	transition: all 0.3s; /*ver*/
 	cursor: pointer;
-	
 }
 
-.wspHover{
-	
+.wspHover {
 	position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 150px;
-    height: 71px;
-    float: left;
-   display: none;
-   cursor: pointer;
-   z-index: 2;
+	bottom: 0px;
+	right: 0px;
+	width: 150px;
+	height: 71px;
+	float: left;
+	display: none;
+	cursor: pointer;
+	z-index: 2;
 }
 
-.logoWasap:hover{
-	
-  display: none;
+.logoWasap:hover {
+	display: none;
 }
 
-.wspHover{
-display: block;
-
-
+.wspHover {
+	display: block;
 }
-
-
 
 /*fin de logo*/
-
 
 /*Inicio Footer*/
 footer {
@@ -189,17 +169,21 @@ footer {
 	background-color: blue;
 }
 
-
 /*  INICIO MEDIAS QUERYS*/
 
+/*-------------------------------*/
+/* 1) - mobile - hasta 600px
+   2) - tablet -desde 601px lo mínimo  hasta 1000px lo máximo
+   3) - desktop
 
+/*mobile*/
 
+/*-------------------------------*/
 
+@media (max-width: 600px) {
+	/*desaparece la tabla  de actividades
+	y aparece el boton de actividades */
 
-@media (max-width: 876px) {
-	div {
-		display: block;
-	}
 	table {
 		display: none;
 	}
@@ -209,44 +193,69 @@ footer {
 		background-color: blue;
 	}
 
-	header {
-		width: 100%;
-		height: 400px;
-		padding: 10px;
-	}
+	/*btn de actividadaes */
+
 	.actividades {
-		display: inline-block!important;
 		position: relative;
-	top: 18px;
-	display: inline-block;
-	color: black;
-	background-color:#e1d6d6;
-	width: 80px;
-	height: 25px;
-	border-radius: 15px;
-	transition: all 1s;
-	text-align: center;
-	padding: 15px;
-	margin-left: 10px;
-	text-decoration: none;
+		top: 18px;
+
+		display: block !important;
+		color: black;
+		background-color: #e1d6d6;
+		width: 80px;
+		height: 25px;
+		border-radius: 15px;
+		transition: all 1s;
+		text-align: center;
+		padding: 15px;
+		text-decoration: none;
+		margin: 0px auto;
+	}
+
+	header {
+		background-color: white;
+		border-radius: 30px;
+		width: 51vh;
+		height: 60vh;
+		padding: 10px;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+
 	}
 
 	.logoSinLimites {
 		position: relative;
+		margin: 0px auto;
+		float: inherit;
 		display: block;
-		width: -webkit-fill-available;
-		height: 100px;
+		width: 40vh;
+		height: 14vh;
 	}
 
-	nav {
+	.menu {
+		width: 80%;
+		background-color: white;
 		float: none;
+		margin: 0px auto;
+		display: block;
 	}
-	nav a {
+
+	.menu a {
 		position: relative;
-		width: -webkit-fill-available;
-		height: 20px;
-		margin-top: 5px;
-		margin-left: 0px;
+		top: 18px;
+		display: block;
+		color: black;
+		background-color: #e1d6d6;
+		width: 30vh;
+		height: 4vh;
+		border-radius: 15px;
+		transition: all 1s;
+		text-align: center;
+		padding: 15px;
+		text-decoration: none;
+		margin: 0px auto;
+		margin-top: 3px;
 	}
 
 	a:hover {
@@ -256,83 +265,43 @@ footer {
 		width: -webkit-fill-available;
 		height: 30px;
 	}
-}
 
-/*
-
-@media (min-width: 501px) and (max-width: 875px) {
-	div {
-		display: block;
-	}
-	table {
-		display: none;
-	}
-
-	body {
-		background-image: none;
-		background-color: rgb(234, 0, 255);
-	}
-
-	header {
-		width: 100%;
-		height: 400px;
-		padding: 10px;
-	}
-	.actividades {
-		display: block;
-	}
-
-	.logoSinLimites {
-		position: relative;
-		display: block;
-		width: 500px;
-		margin-left: 100px;
-		margin-bottom: 10px;
+	footer {
+		margin-top: 280px;
 		height: 100px;
-	}
-
-	nav {
-		float: none;
-	}
-	nav a {
-		position: relative;
-		width: 500px;
-		height: 20px;
-		margin-top: 8px;
-		margin-left: 90px;
+		text-align: center;
+		padding: 55px 0px 0px -4px;
+		font-size: 25px;
+		font-family: "Courier New", Courier, monospace;
+		color: blue;
+		background-color: white;
 	}
 }
-*/
 
-@media (min-width: 877px) and (max-width: 1000px) {
+/*-------------------------------*/
+/*tablet*/
+/*-------------------------------*/
+
+@media (min-width: 601px) and (max-width: 1000px) {
 	body {
+		width: 100%;
 		background-image: url("imagenes/actividades3.jpg");
 		background-size: cover;
 		background-position: center;
-	
 	}
 
 	header {
+		
+	
+		background-color: white;
+		border-radius: 30px;
 		width: 100%;
-		height: 110px;
+		height: 20vh;
 		padding: 10px;
-	}
-	.actividades {
-		display: inline-block!important;
 		position: relative;
-	top: 18px;
-	display: inline-block;
-	color: black;
-	background-color:#e1d6d6;
-	width: 80px;
-	height: 25px;
-	border-radius: 15px;
-	transition: all 1s;
-	text-align: center;
-	padding: 15px;
-	margin-left: 10px;
-	text-decoration: none;
+		
 	}
+
 
 	.logoSinLimites {
 		position: relative;
@@ -341,22 +310,27 @@ footer {
 		height: 100px;
 	}
 
-	nav {
-		float: none;
+	.menu {
+		float: right;
 	}
-	nav a {
+	.menu a {
 		position: relative;
 		width: 70px;
 		height: 20px;
 		margin-top: 5px;
 		margin-left: 20px;
 	}
+    
 
-	a:hover {
+    .menu a:hover {
 		color: white;
-		background-color: rgb(47, 47, 56);
+		background-color: rgb(0, 38, 255);
 		border-radius: 0px;
-		width: -webkit-fill-available;
-		height: 30px;
+		width: 100px;
+		height: 10px;
+	}
+
+	table{width: 100%;
+		font-size: 21px;
 	}
 }

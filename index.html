@@ -6,105 +6,122 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Gimnasio Sin Límites</title>
 		<link rel="stylesheet" href="style.css" />
+	<script src="Js/script.js"></script>
 	</head>
 
 	<body>
-		<div>
+		<!-- INICIO DE HEADER -->
 		<header>
-			<!--<h1>SIN LIMITES GYM</h1>-->
-            <img class="logoSinLimites " src="imagenes/15823266_117960055374252_5853938483592765887_n.jpg" alt="">
-			
-			<nav>
-				<div>
+			<img
+				class="logoSinLimites"
+				src="imagenes/15823266_117960055374252_5853938483592765887_n.jpg"
+				alt="sinLimitesGym" />
+
+			<nav class="menu">
+				
 					<a href="https://www.facebook.com"> Facebook</a>
-					<a href="../sinLimitesGym/Actividades/indexActividades.html" class="actividades"> Actividades</a>
+					
+					<!--btn de actividades solo aparece cuando estoy en mobile-->
+					<a
+						href="../sinLimitesGym/Actividades/indexActividades.html"
+						class="actividades">
+						Actividades</a
+					>
 					<a href="../sinLimitesGym/Contacto/indexContacto.html">Contacto </a>
 					<a href="Nutricion/indexNutricion.html">Nutrición</a>
-				</div>
+				
 			</nav>
-			
-			
 		</header>
-	</div>
-<div>
-		<div class="fraseDelDia" >
-		<p >
-			<span>Frase del Dia : </span> El camino hacia el éxito siempre está en
-			construcción.
-		</p>
-	</div>
-</div>
 
-      <!--   <img src="imagenes/Fondo.jpg" alt="gimnasio Sin Limites">-->
-		 
+		<!-- FIN DE HEADER -->
+
+		<!-- FRASE DEL DIA-->
+			<div class="fraseDelDia">
+				<p>
+					<span>Frase del Dia : </span> El camino hacia el éxito siempre está en
+					construcción.
+				</p>
+			</div>
+		<!-- FRASE DEL DIA-->	
+		
 
 		
-<!--		<div class="barraSeparadora">Esto es una barra separadora</div>
--->
-<div>
-		<table>
-			<!-- tabla entera-->
-			<tr>
-				<!-- titulos-->
-				<th>Hora</th>
-				<th>Lunes</th>
-				<th>Martes</th>
-				<th>Miercoles</th>
-				<th>Jueves</th>
-				<th>Viernes</th>
-			</tr>
-			<tbody>
-				<!-- cuerpo de la tabla-->
+
+<!-- INICIO DE TABLA DE ACTIVIDADES-->
+		
+			<table>
+				<!-- tabla entera-->
 				<tr>
-					<!-- celda de tabla-->
-					<td>8:00 hs.</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
+					<!-- titulos-->
+					<th>Hora</th>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miercoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
 				</tr>
-				<tr>
-					<!-- celda de tabla-->
-					<td>9:00 hs.</td>
-					<td>Jumping</td>
-					<td>GAP</td>
-					<td>Jumping</td>
-					<td>GAP</td>
-					<td>Jumping</td>
-				</tr>
-				<tr>
-					<!-- celda de tabla-->
-					<td>12:45 hs.</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-				</tr>
-				<tr>
-					<!-- celda de tabla-->
-					<td>14:00 hs.</td>
-					<td>Crossfit</td>
-					<td>Spinnig</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-				</tr>
-				<tr>
-					<!-- celda de tabla-->
-					<td>20:00 hs.</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-					<td>Crossfit</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div>
-		<footer>Todos los derechos reservados 2022</footer>
-	</div>
+				<tbody>
+					<!-- cuerpo de la tabla-->
+					<tr>
+						<!-- celda de tabla-->
+						<td>8:00 hs.</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+					</tr>
+					<tr>
+						<!-- celda de tabla-->
+						<td>9:00 hs.</td>
+						<td>Jumping</td>
+						<td>GAP</td>
+						<td>Jumping</td>
+						<td>GAP</td>
+						<td>Jumping</td>
+					</tr>
+					<tr>
+						<!-- celda de tabla-->
+						<td>12:45 hs.</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+					</tr>
+					<tr>
+						<!-- celda de tabla-->
+						<td>14:00 hs.</td>
+						<td>Crossfit</td>
+						<td>Spinnig</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+					</tr>
+					<tr>
+						<!-- celda de tabla-->
+						<td>20:00 hs.</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+						<td>Crossfit</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- FIN DE TABLA DE ACTIVIDADES-->
+
+<!--logo de Wasap-->	
+<img onclick="wasap()" class="logoWasap" src="imagenes/icono-whatsapp.png" alt="">
+<img onclick="wasap()"class="wspHover"src="imagenes/icono-whatsapp-hover.png" alt="">
+
+<!-- fin logo-->
+	
+
+
+<footer>Todos los derechos reservados 2022</footer>
+		
 	</body>
 </html>

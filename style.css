@@ -1,54 +1,88 @@
 body {
 	/*background-color: black;*/
-	background-image:url(imagenes/Fondo.jpg);
+	background-image: url(imagenes/Fondo.jpg);
 	border-radius: 20px;
 	margin: 20px 20px 0px 20px;
-    padding: 40px 40px 4px 40px;
+	padding: 40px 40px 4px 40px;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
+	height: 1000px;
 }
 
+/*btn actividaes cuando si no esta en mobile no se ve,
+porque la tabla se muestra en la pantalla principal*/
+.actividades {
+	display: none !important;
 
-.logoSinLimites{ width: 180px;
-	             height: 80px;
-				 position: relative;
-				 float:left;
-				 border-radius: 1px;
 }
 
-
-nav{ float: right;
+.logoSinLimites {
+	width: 180px;
+	height: 80px;
+	position: relative;
+	float: left;
+	border-radius: 1px;
+	margin-left: 20px;
+    margin-top: 8px;
 }
 
-.actividades{display: none;}
+header {
+	background-color: white;
+    border-radius: 30px;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+}
 
+/*menu desplazado a la derecha*/
+.menu {
+	float: right;
+}
 
+/*enlaces del menu*/
 
-h1 {
-	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.menu a {
+	position: relative;
+	top: 18px;
+	display: inline-block;
+	color: black;
+	background-color:#e1d6d6;
+	width: 80px;
+	height: 25px;
+	border-radius: 15px;
+	transition: all 1s;
 	text-align: center;
-	font-size: 50px;
-	/* para darle a un texto grosor de trazo y color*/
-	-webkit-text-stroke: 2px #3f51b5;
-	/*pone transparente el texto yd eja el borsde*/
-	/* color: transparent;*/
+	padding: 15px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+/*cuando paso el mouse por encima del menu*/
+.menu a:hover {
+	color: white;
+	background-color: blue;
+	border-radius: 0px;
+	width: 200px;
+	height: 30px;
+	
 }
 
 
-header{width: 100%;
-	 height: 100px;
-	 padding: 10px;
-	 position:sticky;
-	 top: 0;
-}
-.fraseDelDia{
-            display: block;
+/*inicio de frase del día*/
 
+
+.fraseDelDia {
+	display: block;
+	height: 60px;
 }
 
 p {
 	text-align: center;
-}
+    margin: 0px auto;
+    padding: 20px;
+	}
 
 span {
 	color: red;
@@ -56,94 +90,13 @@ span {
 	margin: 0px 3px 0px 0px;
 }
 
-button{
-	display: inline-block;
-    color: black;
-	background-color: white;
-	width: 200px;
-	height: 50px;
-	border-radius: 15px;
-	transition: all 1s;
-	
-}
 
-
-button:hover {
-	
-    color: white;
-	background-color: blue;
-	border-radius: 0px;
-    width: 200px;
-    height:60px;
-    
-	/*transform: rotateX(360deg)*/
-}
+/*Fin de frase del día*/
 
 
 
-a  {position: relative;
-	top: 0px;
-	display: inline-block;
-    color: black;
-	background-color: white;
-	width: 200px;
-	height: 25px;
-	border-radius: 15px;
-	transition: all 1s;   
-    text-align: center;
-	padding: 15px;
-	margin-left: 10px;
-	text-decoration: none;
-}
 
-a:hover {
-	
-    color: white;
-	background-color: blue;
-	border-radius: 0px;
-    width: 200px;
-    height:30px;
-    
-	/*transform: rotateX(360deg)*/
-}
-
-
-div {
-	display: flex;
-	justify-content: center;
-}
-
-.btnEnlace {
-	display: inline-block;
-	background-color: white;
-	width: 200px;
-	height: 50px;
-	border-radius: 15px;
-	text-align: center;
-}
-
-.enlace {
-	display: inline;
-	opacity: 0.5;
-	transition: opacity 0.5s;
-	background-color: white;
-}
-
-.enlace:hover {
-	opacity: 1;
-}
-
-.barraSeparadora {
-	background-color: blue;
-	padding: 12px 0px 0px 0px;
-	text-align: center;
-	width: 100%;
-	height: 31px;
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
-/*propiedad de la tabla*/
+/*Inicio  de la tabla*/
 table {
 	font-size: 30px;
 	border: 1px solid gray;
@@ -157,6 +110,7 @@ table {
 th {
 	color: red;
 	background-color: rgb(209, 202, 202);
+	border-radius: 5px;
 	padding: 10px;
 }
 
@@ -174,53 +128,234 @@ tr:hover {
 }
 
 
-footer{ margin-top: 20px;
-	   height: 100px;
-	   text-align: center;
-	   opacity: 0.5;
-	   font-size: 25px;
-	   font-family: 'Courier New', Courier, monospace;
-       color: white;
-	   background-color: blue;
+/*Fin de la tabla*/
+
+
+/*inicio de logo*/
+
+.logoWasap{
+	
+	position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 150px;
+    height: 71px;
+    float: left;
+    z-index: 11;
+	transition: all 0.3s;/*ver*/
+	cursor: pointer;
+	
+}
+
+.wspHover{
+	
+	position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 150px;
+    height: 71px;
+    float: left;
+   display: none;
+   cursor: pointer;
+   z-index: 2;
+}
+
+.logoWasap:hover{
+	
+  display: none;
+}
+
+.wspHover{
+display: block;
+
+
+}
+
+
+
+/*fin de logo*/
+
+
+/*Inicio Footer*/
+footer {
+	margin-top: 280px;
+	height: 100px;
+	text-align: center;
+	opacity: 0.5;
+	font-size: 25px;
+	font-family: "Courier New", Courier, monospace;
+	color: white;
+	background-color: blue;
+}
+
+
+/*  INICIO MEDIAS QUERYS*/
+
+
+
+
+
+@media (max-width: 876px) {
+	div {
+		display: block;
+	}
+	table {
+		display: none;
 	}
 
-	@media(max-width:600px){
-
-   div{ display: block;}
-    table {display: none;}
-
-	body {		
+	body {
 		background-image: none;
-	    background-color: blue;}
+		background-color: blue;
+	}
 
-		header{width: 100%;
-			   height: 400px;
-			  padding: 10px;
-	   }
-	 .actividades{display: block;}  
+	header {
+		width: 100%;
+		height: 400px;
+		padding: 10px;
+	}
+	.actividades {
+		display: inline-block!important;
+		position: relative;
+	top: 18px;
+	display: inline-block;
+	color: black;
+	background-color:#e1d6d6;
+	width: 80px;
+	height: 25px;
+	border-radius: 15px;
+	transition: all 1s;
+	text-align: center;
+	padding: 15px;
+	margin-left: 10px;
+	text-decoration: none;
+	}
 
-	.logoSinLimites	{
-	  position: relative;
-	  display: block;
-	  width: -webkit-fill-available;
-	  height: 100px;}
+	.logoSinLimites {
+		position: relative;
+		display: block;
+		width: -webkit-fill-available;
+		height: 100px;
+	}
 
-   nav{float:none;}		
-   nav a{ 
-	position: relative;   	
-	width: -webkit-fill-available;
-	height: 20px;
-	margin-top: 5px;
-	margin-left: 0px;
-          }
+	nav {
+		float: none;
+	}
+	nav a {
+		position: relative;
+		width: -webkit-fill-available;
+		height: 20px;
+		margin-top: 5px;
+		margin-left: 0px;
+	}
 
-		  a:hover {
-	
-			color: white;
-			background-color: rgb(47, 47, 56);
-			border-radius: 0px;
-			width: -webkit-fill-available;
-			height:30px;	  
-	
+	a:hover {
+		color: white;
+		background-color: rgb(47, 47, 56);
+		border-radius: 0px;
+		width: -webkit-fill-available;
+		height: 30px;
+	}
+}
+
+/*
+
+@media (min-width: 501px) and (max-width: 875px) {
+	div {
+		display: block;
+	}
+	table {
+		display: none;
+	}
+
+	body {
+		background-image: none;
+		background-color: rgb(234, 0, 255);
+	}
+
+	header {
+		width: 100%;
+		height: 400px;
+		padding: 10px;
+	}
+	.actividades {
+		display: block;
+	}
+
+	.logoSinLimites {
+		position: relative;
+		display: block;
+		width: 500px;
+		margin-left: 100px;
+		margin-bottom: 10px;
+		height: 100px;
+	}
+
+	nav {
+		float: none;
+	}
+	nav a {
+		position: relative;
+		width: 500px;
+		height: 20px;
+		margin-top: 8px;
+		margin-left: 90px;
+	}
+}
+*/
+
+@media (min-width: 877px) and (max-width: 1000px) {
+	body {
+		background-image: url("imagenes/actividades3.jpg");
+		background-size: cover;
+		background-position: center;
+		background-color: rgb(234, 0, 255);
+	}
+
+	header {
+		width: 100%;
+		height: 340px;
+		padding: 10px;
+	}
+	.actividades {
+		display: inline-block!important;
+		position: relative;
+	top: 18px;
+	display: inline-block;
+	color: black;
+	background-color:#e1d6d6;
+	width: 80px;
+	height: 25px;
+	border-radius: 15px;
+	transition: all 1s;
+	text-align: center;
+	padding: 15px;
+	margin-left: 10px;
+	text-decoration: none;
+	}
+
+	.logoSinLimites {
+		position: relative;
+		display: block;
+		width: 200px;
+		height: 100px;
+	}
+
+	nav {
+		float: none;
+	}
+	nav a {
+		position: relative;
+		width: 70px;
+		height: 20px;
+		margin-top: 5px;
+		margin-left: 20px;
+	}
+
+	a:hover {
+		color: white;
+		background-color: rgb(47, 47, 56);
+		border-radius: 0px;
+		width: -webkit-fill-available;
+		height: 30px;
 	}
 }

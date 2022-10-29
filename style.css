@@ -14,6 +14,11 @@ porque la tabla se muestra en la pantalla principal*/
 	display: none !important;
 }
 
+/*btn del menu hamburguesa*/
+.mobile {
+	display: none;
+}
+
 .logoSinLimites {
 	width: 180px;
 	height: 80px;
@@ -169,18 +174,148 @@ footer {
 	background-color: blue;
 }
 
+/*---------------------------------------------*/
+/*menu tipo hamburguesa*/
+
+/*---------------------------------------------*/
+
+.btn-menu {
+	height: 30px;
+	width: 30px;
+	float: right;
+	position: relative;
+	top: 10px;
+	transition: all 0.15s;
+	opacity: 0.5;
+}
+
+.btn-menu-abierto,
+.btn-menu:hover {
+	cursor: pointer;
+	opacity: 1;
+	transform: scale(0.8);
+}
+
+.btn-menu-abierto .linea {
+	background-color: black;
+}
+
+.linea {
+	width: 30px;
+	height: 4px;
+	background-color: black;
+	margin: 4px 0px;
+	border-radius: 5px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	transition: all 0.2s;
+}
+
+.btn-menu-abierto .linea:nth-child(1) {
+	transform: rotate(35deg);
+	top: 8px;
+	left: -2px;
+	width: 35px;
+}
+
+.btn-menu-abierto .linea:nth-child(2) {
+	opacity: 0;
+}
+
+.btn-menu-abierto .linea:nth-child(3) {
+	transform: rotate(-34deg);
+	top: -8px;
+	left: -2px;
+	width: 35px;
+}
+
+.btn-list {
+	background-color: white;
+	box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	float: right;
+	position: fixed;
+	top: 120px;
+	width: 200px;
+	right: -400px;
+	transition: all 0.25s;
+}
+
+.btn-list a {
+	padding: 20px 32px;
+	font-size: 15px;
+	text-decoration: none;
+	color: #333;
+	display: block;
+	background-color: white;
+	text-align: right;
+	transition: all 0.25s;
+}
+.btn-list a:hover {
+	color: white;
+	background-color: green;
+	top: 0;
+}
+
+.btn-list-abierto {
+	right: 0px;
+}
+
+/*fin boton hamburguesa*/
+
 /*  INICIO MEDIAS QUERYS*/
 
 /*-------------------------------*/
-/* 1) - mobile - hasta 600px
+/* 1)- mobile habmburguesa - hasta 400px
+   1) - mobile - desde 400px hasta 600px
    2) - tablet -desde 601px lo mínimo  hasta 1000px lo máximo
-   3) - desktop
+   3) - desktop*
+/*---------------------------------*/
 
-/*mobile*/
+/* mobile con boton hamburguesa */
+
+@media (max-width: 401px) {
+	.mobile {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+	body {
+		width: 100%;
+		background-image: none;
+		background-color: #707039;
+		background-size: cover;
+		background-position: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
+		background-color: white;
+		
+		width: 100%;
+		height: 10%;
+		padding: 10px;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+	}
+
+	table {
+		display: none;
+	}
+}
+
+/*------------------------------*/
+
+/*mobile sin btn hamburguesa*/
 
 /*-------------------------------*/
 
-@media (max-width: 600px) {
+@media (min-width: 402px) and (max-width: 600px) {
 	/*desaparece la tabla  de actividades
 	y aparece el boton de actividades */
 
@@ -221,7 +356,6 @@ footer {
 		position: relative;
 		top: 0;
 		margin: 0 auto;
-
 	}
 
 	.logoSinLimites {
@@ -291,17 +425,13 @@ footer {
 	}
 
 	header {
-		
-	
 		background-color: white;
 		border-radius: 30px;
 		width: 100%;
 		height: 20vh;
 		padding: 10px;
 		position: relative;
-		
 	}
-
 
 	.logoSinLimites {
 		position: relative;
@@ -320,9 +450,8 @@ footer {
 		margin-top: 5px;
 		margin-left: 20px;
 	}
-    
 
-    .menu a:hover {
+	.menu a:hover {
 		color: white;
 		background-color: rgb(0, 38, 255);
 		border-radius: 0px;
@@ -330,7 +459,8 @@ footer {
 		height: 10px;
 	}
 
-	table{width: 100%;
+	table {
+		width: 100%;
 		font-size: 21px;
 	}
 }

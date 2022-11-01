@@ -1,8 +1,10 @@
 body {
-	background-image: url(imagenes/Fondo.jpg);
+	/*background-image: url(imagenes/Fondo.jpg);*/
+	background-image: url(imagenes/FondoHD.jpg);
+	background-size: cover;
 	border-radius: 20px;
-	margin: 20px 20px 0px 20px;
-	padding: 40px 40px 4px 40px;
+	margin: 0px 20px 0px 20px;
+	padding: 0px 40px 4px 40px;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	height: 1000px;
@@ -17,6 +19,21 @@ porque la tabla se muestra en la pantalla principal*/
 /*btn del menu hamburguesa*/
 .mobile {
 	display: none;
+}
+
+.divsection {
+	display: block;
+	height: 40px;
+}
+.claseGratis {
+	background-color: aqua;
+	background: #ff561b;
+	padding: 11px 20px;
+	transform: skewX(-15deg);
+	color: #254250;
+	transform-origin: 50% 50%;
+	float: right;
+	font-weight: bold;
 }
 
 .logoSinLimites {
@@ -93,6 +110,13 @@ span {
 
 /*Fin de frase del día*/
 
+/*video promocional*/
+
+video {
+	width: 100%;
+	height: 50%;
+}
+
 /*Inicio  de la tabla*/
 table {
 	font-size: 30px;
@@ -101,6 +125,7 @@ table {
 	border-radius: 15px;
 	margin: 0px auto;
 	/*margin auto para que centre la tabla en la pagina*/
+	margin-top: 50px;
 }
 
 /*propiedad de titulos table head -encabezado*/
@@ -164,7 +189,7 @@ tr:hover {
 
 /*Inicio Footer*/
 footer {
-	margin-top: 280px;
+	margin-top: 100px;
 	height: 100px;
 	text-align: center;
 	opacity: 0.5;
@@ -173,6 +198,8 @@ footer {
 	color: white;
 	background-color: blue;
 }
+
+.face{background-image:url(imagenes/LogoFacebook1.png) ;}
 
 /*---------------------------------------------*/
 /*menu tipo hamburguesa*/
@@ -285,27 +312,68 @@ footer {
 	}
 	body {
 		width: 100%;
+		height: 600px;
 		background-image: none;
-		background-color: #707039;
+		background-color: #15161a;
 		background-size: cover;
 		background-position: center;
 		margin: 0;
 		padding: 0;
 	}
 
+	video {
+		display: none;
+	}
+
 	header {
 		background-color: white;
-		
+		border-radius: 0px;
 		width: 100%;
-		height: 10%;
-		padding: 10px;
+		height: 17%;
+		padding: 0px;
 		position: relative;
 		top: 0;
 		margin: 0 auto;
 	}
 
+	.claseGratis {
+		margin-right: 7px;
+	}
+
+	.fraseDelDia {
+		margin-top: 53px;
+	}
+
+	.btn-list {
+		top: 142px;
+	}
+
 	table {
 		display: none;
+	}
+
+	.logoWasap {
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		width: 116px;
+		height: 60px;
+		float: left;
+		z-index: 11;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+
+	.wspHover {
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		width: 116px;
+		height: 60px;
+		float: left;
+		z-index: 2;
+		transition: all 0.3s;
+		cursor: pointer;
 	}
 }
 
@@ -347,6 +415,9 @@ footer {
 		margin: 0px auto;
 	}
 
+	video {
+		display: none;
+	}
 	header {
 		background-color: white;
 		border-radius: 30px;
@@ -409,6 +480,29 @@ footer {
 		font-family: "Courier New", Courier, monospace;
 		color: blue;
 		background-color: white;
+	}
+	.logoWasap {
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		width: 130px;
+		height: 65px;
+		float: left;
+		z-index: 11;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+
+	.wspHover {
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		width: 130px;
+		height: 65px;
+		float: left;
+		z-index: 2;
+		transition: all 0.3s;
+		cursor: pointer;
 	}
 }
 

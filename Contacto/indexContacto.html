@@ -9,16 +9,19 @@
 	</head>
 
 	<body>
-		<h1>SIN LIMITES GYM</h1>
-    
-		<form action="">
+		
+		<img class="logoSinLimites"src="../imagenes/logoSL.jpg" alt="">
+        
+		<form action="https://www.cronoscentrotecnologico.com/cursos/programacion-web-nivel-1/formulario/generico.php">
 			Nombre
-			<input type="text" />
+			<input type="text" placeholder="Ingrese su nombre Completo"/>
 			Apellido
-			<input type="text" />
+			<input type="text"  placeholder="Ingrese su apellido"/>
+			email
+			<input type="email" name="Email" id="" placeholder="Ingrese su mail">
 
 			Mensaje
-			<textarea rows="10">Escriba aquí su consulta</textarea>
+			<textarea rows="25" class="textMensaje" placeholder='Escriba aquí su consulta,si es por la clase gratis ponga " Clase Gratis!!!! '></textarea>
 			Genero:
 			<select>
 				<option>--Seleccione su Genero</option>
@@ -29,9 +32,12 @@
 				<!-- si le pongo dentro de option "selected" toma ese como primera opcion-->
 			</select>
 
+			
+
 			<button class="btnAnimado" type="submit">Enviar Formulario</button>
 			<button class="btnAnimado" type="reset">Borrar Formulario</button>
 			<button class="btnAnimado"><a href="../index.html">Volver a Pagina Principal</a></button>
+			<button class="btnAnimado"><a href="../Actividades/indexActividades.html">Volver a Actividades</a></button>
 		</form>
 	</body>
 </html>

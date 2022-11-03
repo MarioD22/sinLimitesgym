@@ -5,23 +5,80 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styleForm.css" />
+		<script src="../Js/script.js"></script>
 		<title>Contacto</title>
 	</head>
 
 	<body>
-		
-		<img class="logoSinLimites"src="../imagenes/logoSL.jpg" alt="">
-        
-		<form action="https://www.cronoscentrotecnologico.com/cursos/programacion-web-nivel-1/formulario/generico.php">
+		<div class="divsection">
+			<section>
+				<a class="claseGratis " href="Contacto/indexContacto.html">Clase Gratis!!</a>
+			</section>
+			
+		</div>
+			<!-- INICIO DE HEADER -->
+			<header>
+				
+				<img
+					class="logoSinLimites"
+					src="../imagenes/logoSL.jpg"
+					alt="sinLimitesGym" />
+	
+				<nav class="menu">
+					<a href="../index.html">Inicio</a>
+						
+						
+						<!--btn de actividades solo aparece cuando estoy en mobile-->
+						<a
+							href="../sinLimitesGym/Actividades/indexActividades.html"
+							class="actividades">
+							Actividades</a
+						>
+						<a href="../Nutricion/indexNutricion.html">Nutrición</a>
+						<a href="../sinLimitesGym/Contacto/indexContacto.html">Contacto </a>
+						<a href="#"><i class="face""></i> Facebook</a>
+					
+				</nav>
+	
+			 <!-- Inicio del menu mobile tipo hamburguesa-->
+	
+	
+	
+			 <!-- Botón de menu tipo hamburguesa. Aparecerá solo en modo mobile. -->
+			 <div class="btn-menu mobile" id="btn-menu" onclick="Menu()">
+				<!-- dentro ponemos 3 div, uno para cada línea -->
+				<div class="linea"></div>
+				<div class="linea"></div>
+				<div class="linea"></div>
+			  </div>
+	  
+			  <!-- Lista de botones para el menu mobile -->
+			  <nav class="btn-list mobile" id="btn-list">
+				<a href="#">Facebook</a>
+				<a href="../sinLimitesGym/Actividades/indexActividades.html">Actividades</a>
+				<a href="Nutricion/indexNutricion.html">Nutricion</a>
+				<a href="../sinLimitesGym/Contacto/indexContacto.html">Contacto</a>
+			  </nav>
+	
+			  <!--fin del menu mobile-->
+	
+			</header>
+	
+
+		<form
+			action="https://www.cronoscentrotecnologico.com/cursos/programacion-web-nivel-1/formulario/generico.php">
 			Nombre
-			<input type="text" placeholder="Ingrese su nombre Completo"/>
+			<input type="text" placeholder="Ingrese su nombre Completo" />
 			Apellido
-			<input type="text"  placeholder="Ingrese su apellido"/>
-			email
-			<input type="email" name="Email" id="" placeholder="Ingrese su mail">
+			<input type="text" placeholder="Ingrese su apellido" />
+			Email
+			<input type="email" name="Email" id="" placeholder="Ingrese su mail" />
 
 			Mensaje
-			<textarea rows="25" class="textMensaje" placeholder='Escriba aquí su consulta,si es por la clase gratis ponga " Clase Gratis!!!! '></textarea>
+			<textarea
+				rows="25"
+				class="textMensaje"
+				placeholder='Escriba aquí su consulta,si es por la clase gratis ponga " Clase Gratis!!!! '></textarea>
 			Genero:
 			<select>
 				<option>--Seleccione su Genero</option>
@@ -31,13 +88,23 @@
 				<option>No sabe no contesta</option>
 				<!-- si le pongo dentro de option "selected" toma ese como primera opcion-->
 			</select>
-
 			
-
-			<button class="btnAnimado" type="submit">Enviar Formulario</button>
-			<button class="btnAnimado" type="reset">Borrar Formulario</button>
-			<button class="btnAnimado"><a href="../index.html">Volver a Pagina Principal</a></button>
-			<button class="btnAnimado"><a href="../Actividades/indexActividades.html">Volver a Actividades</a></button>
 		</form>
+
+		<!--logo de Wasap-->
+		<img
+			onclick="wasap()"
+			class="logoWasap"
+			src="../imagenes/icono-whatsapp.png"
+			alt="" />
+		<img
+			onclick="wasap()"
+			class="wspHover"
+			src="../imagenes/icono-whatsapp-hover.png"
+			alt="" />
+
+		<!-- fin logo-->
+
+		<footer>Todos los derechos reservados 2022</footer>
 	</body>
 </html>

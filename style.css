@@ -1,13 +1,13 @@
 body {
 	/*background-image: url(imagenes/Fondo.jpg);*/
-	background-image: url(imagenes/FondoHD.jpg);
+	background-image: url(imagenes/FondoHD2.jpg);
 	background-size: cover;
 	border-radius: 20px;
 	margin: 0px 20px 0px 20px;
 	padding: 0px 40px 4px 40px;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
-	height: 1000px;
+	
 }
 
 /*btn actividaes cuando si no esta en mobile no se ve,
@@ -27,6 +27,7 @@ porque la tabla se muestra en la pantalla principal*/
 }
 .claseGratis {
 	background-color: aqua;
+	text-decoration: none;
 	background: #ff561b;
 	padding: 11px 20px;
 	transform: skewX(-15deg);
@@ -34,6 +35,12 @@ porque la tabla se muestra en la pantalla principal*/
 	transform-origin: 50% 50%;
 	float: right;
 	font-weight: bold;
+	transition: all 1s;
+}
+
+
+.claseGratis:hover{
+	color: white;
 }
 
 .logoSinLimites {
@@ -82,10 +89,8 @@ header {
 /*cuando paso el mouse por encima del menu*/
 .menu a:hover {
 	color: white;
-	background-color: blue;
-	border-radius: 0px;
-	width: 200px;
-	height: 30px;
+	background-color:  #1e4b9a;
+	top: 5px;
 }
 
 /*inicio de frase del día*/
@@ -115,7 +120,9 @@ span {
 video {
 	width: 100%;
 	height: 50%;
+	/*pointer-events:none;*/
 }
+
 
 /*Inicio  de la tabla*/
 table {
@@ -126,6 +133,7 @@ table {
 	margin: 0px auto;
 	/*margin auto para que centre la tabla en la pagina*/
 	margin-top: 50px;
+	backdrop-filter: blur(8px);
 }
 
 /*propiedad de titulos table head -encabezado*/
@@ -139,12 +147,12 @@ th {
 /*propiedad de los datos table data */
 td {
 	padding: 10px;
-	border: 1px solid gray;
+	border: 1px solid #3e3f43;
 }
 
 /*poso por encima de cada celda celda table row*/
 tr:hover {
-	background-color: blue;
+	background-color:#1e4b9a;
 	color: white;
 	cursor: pointer;
 }
@@ -189,17 +197,20 @@ tr:hover {
 
 /*Inicio Footer*/
 footer {
-	margin-top: 100px;
-	height: 100px;
-	text-align: center;
-	opacity: 0.5;
-	font-size: 25px;
-	font-family: "Courier New", Courier, monospace;
-	color: white;
-	background-color: blue;
+	background-position: bottom;
+    margin-top: 100px;
+    height: 20px;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    /* opacity: 0.5; */
+    font-size: 16px;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    background-color: #1e4b9a;
+    border-radius: 30px;
+	margin-bottom: 40px;
 }
 
-.face{background-image:url(imagenes/LogoFacebook1.png) ;}
 
 /*---------------------------------------------*/
 /*menu tipo hamburguesa*/
@@ -312,11 +323,15 @@ footer {
 	}
 	body {
 		width: 100%;
-		height: 600px;
-		background-image: none;
-		background-color: #15161a;
+		
+		
+		background-image: url(imagenes/Fondo.jpg);
 		background-size: cover;
 		background-position: center;
+		background-repeat: no-repeat;
+
+		background-color: #15161a;
+		
 		margin: 0;
 		padding: 0;
 	}
@@ -329,7 +344,7 @@ footer {
 		background-color: white;
 		border-radius: 0px;
 		width: 100%;
-		height: 17%;
+		/*height: 17%;*/
 		padding: 0px;
 		position: relative;
 		top: 0;
@@ -341,7 +356,7 @@ footer {
 	}
 
 	.fraseDelDia {
-		margin-top: 53px;
+		margin-top: 30px;
 	}
 
 	.btn-list {
@@ -354,11 +369,11 @@ footer {
 
 	.logoWasap {
 		position: fixed;
-		bottom: 0px;
-		right: 0px;
-		width: 116px;
-		height: 60px;
-		float: left;
+		top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 40px;
+		/*float: left;*/
 		z-index: 11;
 		transition: all 0.3s;
 		cursor: pointer;
@@ -366,15 +381,23 @@ footer {
 
 	.wspHover {
 		position: fixed;
-		bottom: 0px;
-		right: 0px;
-		width: 116px;
-		height: 60px;
-		float: left;
+		top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 40px;
+		/*float: left;*/
 		z-index: 2;
 		transition: all 0.3s;
 		cursor: pointer;
 	}
+
+
+	.btn-menu{right: 8px;
+	}
+
+	footer{height: 50px;
+		  padding: 20px 0px 20px 0px;
+		  margin-top: 340px;}
 }
 
 /*------------------------------*/
@@ -392,8 +415,12 @@ footer {
 	}
 
 	body {
-		background-image: none;
+		background-image: url(imagenes/actividades1.jpg);
 		background-color: blue;
+		/*height: 100%;
+		width: 100%;*/
+		margin: 0;
+		padding: 0;
 	}
 
 	/*btn de actividadaes */
@@ -472,18 +499,22 @@ footer {
 	}
 
 	footer {
-		margin-top: 280px;
-		height: 100px;
-		text-align: center;
-		padding: 55px 0px 0px -4px;
-		font-size: 25px;
-		font-family: "Courier New", Courier, monospace;
-		color: blue;
-		background-color: white;
-	}
+		/*margin-top: 30px;*/
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+    padding: 55px 0px 0px -4px;
+    padding: 26px 0px 4px 0px;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    color: blue;
+    background-color: white;
+}
+
 	.logoWasap {
 		position: fixed;
-		bottom: 0px;
+		bottom: 62px;
 		right: 0px;
 		width: 130px;
 		height: 65px;
@@ -495,7 +526,7 @@ footer {
 
 	.wspHover {
 		position: fixed;
-		bottom: 0px;
+		bottom: 62px;
 		right: 0px;
 		width: 130px;
 		height: 65px;

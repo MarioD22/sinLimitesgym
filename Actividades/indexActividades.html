@@ -8,13 +8,54 @@
 		<title>Actividades</title>
 	</head>
 	<body>
-		<div class="container">
+		
 			<header>
 			
-				<div class="imglogo">
-					<img class="logoSinLimites" src="../imagenes/logoSL.jpg" alt="" />
-				
-		
+				<img
+					class="logoSinLimites"
+					src="../imagenes/logoSL.jpg"
+					alt="sinLimitesGym" />
+	
+				<nav class="menu">
+					
+						
+						
+						<!--btn de actividades solo aparece cuando estoy en mobile-->
+						<a
+							href="../sinLimitesGym/Actividades/indexActividades.html"
+							class="actividades">
+							Actividades</a
+						>
+						<a href="Nutricion/indexNutricion.html">Nutrición</a>
+						<a href="Contacto/indexContacto.html">Contacto </a>
+						
+	
+						<a href="#"><i class="face""></i> Facebook</a>
+					
+				</nav>
+	
+			 <!-- Inicio del menu mobile tipo hamburguesa-->
+	
+	
+	
+			 <!-- Botón de menu tipo hamburguesa. Aparecerá solo en modo mobile. -->
+			 <div class="btn-menu mobile" id="btn-menu" onclick="Menu()">
+				<!-- dentro ponemos 3 div, uno para cada línea -->
+				<div class="linea"></div>
+				<div class="linea"></div>
+				<div class="linea"></div>
+			  </div>
+	  
+			  <!-- Lista de botones para el menu mobile -->
+			  <nav class="btn-list mobile" id="btn-list">
+				<a href="#">Facebook</a>
+				<a href="../sinLimitesGym/Actividades/indexActividades.html">Actividades</a>
+				<a href="Nutricion/indexNutricion.html">Nutricion</a>
+				<a href="../sinLimitesGym/Contacto/indexContacto.html">Contacto</a>
+			  </nav>
+	
+			  <!--fin del menu mobile-->
+	
 			</header>
 			<table>
 				<!-- tabla entera-->
@@ -78,23 +119,8 @@
 			</table>
 
 
-			
-<div class="botones">
-	<button class="btnAnimado">
-		<a href="../index.html">Volver a Pagina Principal</a>
-	</button>
-	<button class="btnAnimado">
-		<a href="../Contacto/indexContacto.html">Contacto</a>
-	</button>
-	<button class="btnAnimado">
-		<a href="#">Facebook</a>
-	</button>
-	<button class="btnAnimado">
-		<a href="../Nutricion/indexNutricion.html">Nutrición</a>
-	</button>
-</div>
 
 			<footer>Todos los derechos reservados 2022</footer>
-		</div>
+		
 	</body>
 </html>

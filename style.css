@@ -186,7 +186,8 @@ tr:hover {
 }
 
 .logoWasap:hover {
-	display: none;
+	opacity: 0;
+	/*display: none;*/
 }
 
 .wspHover {
@@ -508,7 +509,7 @@ footer {
     padding: 26px 0px 4px 0px;
     font-size: 15px;
     font-family: "Courier New", Courier, monospace;
-    color: blue;
+    color: #1e4b9a;
     background-color: white;
 }
 

@@ -101,31 +101,7 @@ header {
 	top: 5px;
 }
 
-
-  /*
-
-  .imglogo {
-	background-color: white;
-	max-width: 50%;
-	margin: 0 auto;
-	border-radius: 10px;
-	box-shadow: 0 18px 7px -9px #9e9e9e;
-}
-
-.logoSinLimites {
-	width: 180px;
-	height: 80px;
-	position: relative;
-	border-radius: 1px;
-	display: block;
-	margin: 0px auto;
-	margin-bottom: 20px;
-	border-radius: 10px;
-}
-
-  */
-
-  /*Inicio  de la tabla*/
+/*Inicio  de la tabla*/
 table {
 	font-size: 30px;
 	border: 1px solid gray;
@@ -207,4 +183,408 @@ footer {
     background-color: #1e4b9a;
     border-radius: 30px;
 	margin-bottom: 40px;
+}
+
+
+/*---------------------------------------------*/
+/*menu tipo hamburguesa*/
+
+/*---------------------------------------------*/
+
+.btn-menu {
+	height: 30px;
+	width: 30px;
+	float: right;
+	position: relative;
+	top: 10px;
+	transition: all 0.15s;
+	opacity: 0.5;
+}
+
+.btn-menu-abierto,
+.btn-menu:hover {
+	cursor: pointer;
+	opacity: 1;
+	transform: scale(0.8);
+}
+
+.btn-menu-abierto .linea {
+	background-color: black;
+}
+
+.linea {
+	width: 30px;
+	height: 4px;
+	background-color: black;
+	margin: 4px 0px;
+	border-radius: 5px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	transition: all 0.2s;
+}
+
+.btn-menu-abierto .linea:nth-child(1) {
+	transform: rotate(35deg);
+	top: 8px;
+	left: -2px;
+	width: 35px;
+}
+
+.btn-menu-abierto .linea:nth-child(2) {
+	opacity: 0;
+}
+
+.btn-menu-abierto .linea:nth-child(3) {
+	transform: rotate(-34deg);
+	top: -8px;
+	left: -2px;
+	width: 35px;
+}
+
+.btn-list {
+	background-color: white;
+	box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	float: right;
+	position: fixed;
+	top: 120px;
+	width: 200px;
+	right: -400px;
+	transition: all 0.25s;
+}
+
+.btn-list a {
+	padding: 20px 32px;
+	font-size: 15px;
+	text-decoration: none;
+	color: #333;
+	display: block;
+	background-color: white;
+	text-align: right;
+	transition: all 0.25s;
+}
+.btn-list a:hover {
+	color: white;
+	background-color: green;
+	top: 0;
+}
+
+.btn-list-abierto {
+	right: 0px;
+}
+
+/*fin boton hamburguesa*/
+
+/*  INICIO MEDIAS QUERYS*/
+
+/*-------------------------------*/
+/* 1)- mobile habmburguesa - hasta 400px
+   1) - mobile - desde 400px hasta 600px
+   2) - tablet -desde 601px lo mínimo  hasta 1000px lo máximo
+   3) - desktop*
+/*---------------------------------*/
+
+/* mobile con boton hamburguesa */
+
+@media (max-width: 401px) {
+	.mobile {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+	body {
+		width: 100%;
+		
+		
+		background-image: url(../imagenes/Fondo.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		background-color: #15161a;
+		
+		margin: 0;
+		padding: 0;
+	}
+
+	video {
+		display: none;
+	}
+
+	header {
+		background-color: white;
+		border-radius: 0px;
+		width: 100%;
+		/*height: 17%;*/
+		padding: 0px;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+	}
+
+	.claseGratis {
+		margin-right: 7px;
+	}
+
+	.fraseDelDia {
+		margin-top: 30px;
+	}
+
+	.btn-list {
+		top: 142px;
+	}
+    
+ .tabla{overflow:scroll;
+	overflow: scroll;
+    height: 452px;
+    width: 100%;
+   
+    margin-top: 240px;
+}
+
+
+
+	.tabla table {
+		font-size: 30px;
+    border: 1px solid gray;
+    border-spacing: 15px;
+    border-radius: 15px;
+    margin: 0px auto;
+    margin-top: 10px;
+    backdrop-filter: blur(8px);
+	}
+
+	.logoWasap {
+		position: fixed;
+		top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 40px;
+		/*float: left;*/
+		z-index: 11;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+
+	.wspHover {
+		position: fixed;
+		top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 40px;
+		/*float: left;*/
+		z-index: 2;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+
+
+	.btn-menu{right: 8px;
+	}
+
+	footer{height: 50px;
+		  padding: 20px 0px 20px 0px;
+		  margin-top: 340px;}
+}
+
+/*------------------------------*/
+
+/*mobile sin btn hamburguesa*/
+
+/*-------------------------------*/
+
+@media (min-width: 402px) and (max-width: 600px) {
+	/*desaparece la tabla  de actividades
+	y aparece el boton de actividades */
+
+
+	body {
+		background-image: url(../imagenes/actividades1.jpg);
+		background-color: #1e4b9a;
+		background-size: cover;
+		background-position: center;
+		/*height: 100%;
+		width: 100%;*/
+		margin: 0;
+		padding: 0;
+	}
+
+   .actividades{display: none;}
+
+
+
+	video {
+		display: none;
+	}
+	header {
+		background-color: white;
+		border-radius: 30px;
+		width: 51vh;
+		height: 70vh;
+		padding: 10px;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+	}
+
+	.logoSinLimites {
+		position: relative;
+		margin: 0px auto;
+		float: inherit;
+		display: block;
+		width: 40vh;
+		height: 14vh;
+	}
+
+	.menu {
+		width: 80%;
+		background-color: white;
+		float: none;
+		margin: 0px auto;
+		display: block;
+	}
+
+	.menu a {
+		position: relative;
+		top: 18px;
+		display: block;
+		color: black;
+		background-color: #e1d6d6;
+		width: 30vh;
+		height: 4vh;
+		border-radius: 15px;
+		transition: all 1s;
+		text-align: center;
+		padding: 15px;
+		text-decoration: none;
+		margin: 0px auto;
+		margin-top: 3px;
+	}
+
+	a:hover {
+		color: white;
+		background-color: rgb(47, 47, 56);
+		border-radius: 0px;
+		width: -webkit-fill-available;
+		height: 30px;
+	}
+
+	  
+	.tabla{overflow:scroll;
+		overflow: scroll;
+		height: 452px;
+		width: 100%;
+	   
+		
+	}
+
+
+	
+	.tabla table {
+		font-size: 30px;
+    border: 1px solid gray;
+    border-spacing: 15px;
+    border-radius: 15px;
+    margin: 0px auto;
+    margin-top: 10px;
+    backdrop-filter: blur(8px);
+	}
+	footer {
+		/*margin-top: 30px;*/
+		background-position: bottom;
+		margin-top: 100px;
+		height: 20px;
+		padding: 40px 0px 40px 0px;
+		text-align: center;
+		/* opacity: 0.5; */
+		font-size: 16px;
+		font-family: "Courier New", Courier, monospace;
+		color: white;
+		background-color: #1e4b9a;
+		border-radius: 30px;
+		margin-bottom: 40px;
+
+}
+
+	.logoWasap {
+		position: fixed;
+		bottom: 62px;
+		right: 0px;
+		width: 130px;
+		height: 65px;
+		float: left;
+		z-index: 11;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+
+	.wspHover {
+		position: fixed;
+		bottom: 62px;
+		right: 0px;
+		width: 130px;
+		height: 65px;
+		float: left;
+		z-index: 2;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+}
+
+/*-------------------------------*/
+/*tablet*/
+/*-------------------------------*/
+
+@media (min-width: 601px) and (max-width: 1000px) {
+	body {
+		width: 100%;
+		background-image: url("../imagenes/actividades3.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	header {
+		background-color: white;
+		border-radius: 30px;
+		width: 100%;
+		height: 20vh;
+		padding: 10px;
+		position: relative;
+	}
+
+	.logoSinLimites {
+		position: relative;
+    display: block;
+    width: 170px;
+    height: 93px;
+	}
+
+	.menu {
+		float: right;
+	}
+	.menu a {
+	position:relative;
+    width: 55px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 14px;
+	}
+
+	.menu a:hover {
+		color: white;
+		background-color: rgb(0, 38, 255);
+		border-radius: 0px;
+		width: 100px;
+		height: 10px;
+	}
+
+	table {
+		width: 100%;
+		font-size: 21px;
+	}
 }

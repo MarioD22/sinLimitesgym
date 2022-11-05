@@ -12,11 +12,6 @@ body {background-image: url(../imagenes/FondoHD2.jpg);
 }
 
 
-/*btn actividaes cuando si no esta en mobile no se ve,
-porque la tabla se muestra en la pantalla principal*/
-.actividades {
-	display: none !important;
-}
 
 /*btn del menu hamburguesa*/
 .mobile {
@@ -262,7 +257,7 @@ body .logoWasap {
 	height: 71px;
 	float: left;
 	z-index: 11;
-	
+	transition: all 0.3s; /*ver*/
 	cursor: pointer;
 }
 
@@ -279,7 +274,7 @@ body .wspHover {
 }
 
 body .logoWasap:hover {
-	display: none;
+	opacity: 0;
 }
 
 body .wspHover {

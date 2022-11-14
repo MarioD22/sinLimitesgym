@@ -36,7 +36,7 @@
 						>
 						<a href="../Nutricion/indexNutricion.html">Nutrición</a>
 						
-						<a href="#"><i class="face""></i> Facebook</a>
+						
 					
 				</nav>
 	
@@ -54,7 +54,7 @@
 	  
 			  <!-- Lista de botones para el menu mobile -->
 			  <nav class="btn-list mobile" id="btn-list">
-				<a href="#">Facebook</a>
+				<a href="#">Redes Sociales</a>
 				<a href="../sinLimitesGym/Actividades/indexActividades.html">Actividades</a>
 				<a href="Nutricion/indexNutricion.html">Nutricion</a>
 				<a href="../sinLimitesGym/Contacto/indexContacto.html">Contacto</a>
@@ -66,16 +66,25 @@
 	
 
 		<form
+		method="post"
+		target="_blank"
 			action="https://www.cronoscentrotecnologico.com/cursos/programacion-web-nivel-1/formulario/generico.php">
+			<input type="hidden" name="asunto" value="Prueba de formulario" />
+			<input type="hidden" name="destino" value="mariodanielcena@gmail.com" />  
+		
+		
 			Nombre
-			<input type="text" placeholder="Ingrese su nombre Completo" />
+			<input type="text" name="nombre" placeholder="Ingrese su nombre Completo" />
 			Apellido
-			<input type="text" placeholder="Ingrese su apellido" />
+			<input type="text" name="apellido" placeholder="Ingrese su apellido" />
+			Telefono
+			<input type="text" name="telefono" />
 			Email
-			<input type="email" name="Email" id="" placeholder="Ingrese su mail" />
+			<input type="email" name="email" id="" placeholder="Ingrese su mail" />
 
 			Mensaje
 			<textarea
+			    name="comentario"
 				rows="25"
 				class="textMensaje"
 				placeholder='Escriba aquí su consulta,si es por la clase gratis ponga " Clase Gratis!!!! '></textarea>
@@ -88,6 +97,8 @@
 				<option>No sabe no contesta</option>
 				<!-- si le pongo dentro de option "selected" toma ese como primera opcion-->
 			</select>
+
+			<button type="submit">Enviar</button>
 			
 		</form>
 
@@ -105,6 +116,13 @@
 
 		<!-- fin logo-->
 
-		<footer>Todos los derechos reservados 2022</footer>
+		<footer>Todos los derechos reservados 2022
+			<div class = redes_sociale>
+				<h5>Siguenos en nuestras redes sociales</h5>
+			  <img src="../imagenes/LogoFacebook.png" alt="facebook" id="cajaredsocial">
+			  <img src="../imagenes/LogoInstagram.png" alt="github" id="cajaredsocial">
+			</div>
+		
+		</footer>
 	</body>
 </html>

@@ -1,4 +1,5 @@
 
+@import url(../nutricion/footer.css);
 body{
 	/*background-image: url(../imagenes/FondoHD2.jpg);
 	background-size: cover;*/
@@ -173,7 +174,7 @@ button a {
 footer {
 	background-position: bottom;
     margin-top: 100px;
-    height: 20px;
+    height: 53px;
     padding: 40px 0px 40px 0px;
     text-align: center;
     /* opacity: 0.5; */
@@ -385,7 +386,7 @@ footer {
 	.btn-menu{right: 8px;
 	}
 
-	footer{height: 50px;
+	footer{height: 70px;
 		  padding: 20px 0px 20px 0px;
 		  margin-top: 340px;}
 }
@@ -496,7 +497,7 @@ footer {
 		/*margin-top: 30px;*/
 		background-position: bottom;
 		margin-top: 100px;
-		height: 20px;
+		height: 53px;
 		padding: 40px 0px 40px 0px;
 		text-align: center;
 		/* opacity: 0.5; */

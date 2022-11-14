@@ -1,9 +1,7 @@
-body {/*
-	background-color: black;
-	margin: 20px;
-	padding: 40px;
-	color: white;
-	*/background-image: url(../imagenes/FondoHD2.jpg);
+@import url(../nutricion/footer.css);
+
+body {
+	background-image: url(../imagenes/FondoHD2.jpg);
 	background-size: cover;
 	border-radius: 20px;
 	margin: 0px 20px 0px 20px;
@@ -232,7 +230,7 @@ img {
 footer {
 	background-position: bottom;
     margin-top: 100px;
-    height: 20px;
+    height: 53px;
     padding: 40px 0px 40px 0px;
     text-align: center;
     /* opacity: 0.5; */
@@ -272,7 +270,7 @@ button a {
 
 
 
-@media (min-width: 815px) {
+@media (max-width: 401px) {
 	.mobile {
 		display: block;
 	}
@@ -354,7 +352,186 @@ button a {
 	.btn-menu{right: 8px;
 	}
 
-	footer{height: 50px;
+	footer{height: 72px;
 		  padding: 20px 0px 20px 0px;
 		  margin-top: 340px;}
+}
+
+/*------------------------------*/
+
+/*mobile sin btn hamburguesa*/
+
+/*-------------------------------*/
+
+@media (min-width: 402px) and (max-width: 600px) {
+	/*desaparece la tabla  de actividades
+	y aparece el boton de actividades */
+
+	table {
+		display: none;
+	}
+
+	body {
+		background-image: url(../imagenes/actividades1.jpg);
+		background-color: blue;
+		/*height: 100%;
+		width: 100%;*/
+		margin: 0;
+		padding: 0;
+	}
+
+	/*btn de actividadaes */
+
+	.actividades {
+		position: relative;
+		top: 18px;
+
+		display: block !important;
+		color: black;
+		background-color: #e1d6d6;
+		width: 80px;
+		height: 25px;
+		border-radius: 15px;
+		transition: all 1s;
+		text-align: center;
+		padding: 15px;
+		text-decoration: none;
+		margin: 0px auto;
+	}
+
+	video {
+		display: none;
+	}
+	header {
+		background-color: white;
+		border-radius: 30px;
+		width: 51vh;
+		height: 60vh;
+		padding: 10px;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+	}
+
+	.logoSinLimites {
+		position: relative;
+		margin: 0px auto;
+		float: inherit;
+		display: block;
+		width: 40vh;
+		height: 14vh;
+	}
+
+	.menu {
+		width: 80%;
+		background-color: white;
+		float: none;
+		margin: 0px auto;
+		display: block;
+	}
+
+	.menu a {
+		position: relative;
+		top: 18px;
+		display: block;
+		color: black;
+		background-color: #e1d6d6;
+		width: 30vh;
+		height: 4vh;
+		border-radius: 15px;
+		transition: all 1s;
+		text-align: center;
+		padding: 15px;
+		text-decoration: none;
+		margin: 0px auto;
+		margin-top: 3px;
+	}
+
+
+	footer {
+		/*margin-top: 30px;*/
+    width: 100%;
+    height: 90px;
+    font-size: 10px;
+    text-align: center;
+    padding: 55px 0px 0px -4px;
+    padding: 26px 0px 4px 0px;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    color: #1e4b9a;
+    background-color: white;
+}
+
+	.logoWasap {
+		position: fixed;
+		bottom: 62px;
+		right: 0px;
+		width: 130px;
+		height: 65px;
+		float: left;
+		z-index: 11;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+
+	.wspHover {
+		position: fixed;
+		bottom: 62px;
+		right: 0px;
+		width: 130px;
+		height: 65px;
+		float: left;
+		z-index: 2;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+}
+
+/*-------------------------------*/
+/*tablet*/
+/*-------------------------------*/
+
+@media (min-width: 601px) and (max-width: 1000px) {
+	body {
+		width: 100%;
+		background-image: url("../imagenes/actividades3.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	header {
+		background-color: white;
+		border-radius: 30px;
+		width: 100%;
+		height: 20vh;
+		padding: 10px;
+		position: relative;
+	}
+
+	.logoSinLimites {
+		position: relative;
+		display: block;
+		width: 165px;
+		height: 100px;
+	}
+
+	.menu {
+		float: right;
+	}
+	.menu a {
+		position: relative;
+    width: 53px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 17px;
+    font-size: 13px;
+	}
+
+	
+
+	table {
+		width: 100%;
+		font-size: 21px;
+	}
+	footer{ height: 55px;}
 }

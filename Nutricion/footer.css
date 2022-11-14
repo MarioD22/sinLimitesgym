@@ -1,0 +1,36 @@
+/*Inicio Footer*/
+footer {
+	background-position: bottom;
+    margin-top: 100px;
+    height: 53px;
+    padding: 40px 0px 70px 0px;
+    text-align: center;
+    /* opacity: 0.5; */
+    font-size: 16px;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    background-color: #1e4b9a;
+    border-radius: 30px;
+	margin-bottom: 40px;
+}
+
+/*bloque de redes sociales*/
+.redes_sociale{
+	height: 40px;
+	
+  margin-top: 6px;
+}
+h5{
+	margin: 0px;
+    margin-bottom: 3px;
+	color: white;
+}
+
+
+/*logos redes sociales*/
+#cajaredsocial{
+	width: 40px;;
+	height: 40px;
+	border-radius: 20px;
+    display: inline-block;
+}

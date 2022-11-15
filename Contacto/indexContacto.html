@@ -12,69 +12,60 @@
 	<body>
 		<div class="divsection">
 			<section>
-				<a class="claseGratis " href="Contacto/indexContacto.html">Clase Gratis!!</a>
+				<a class="claseGratis" href="Contacto/indexContacto.html"
+					>Clase Gratis!!</a
+				>
 			</section>
-			
 		</div>
-			<!-- INICIO DE HEADER -->
-			<header>
-				
-				<img
-					class="logoSinLimites"
-					src="../imagenes/logoSL.jpg"
-					alt="sinLimitesGym" />
-	
-				<nav class="menu">
-					<a href="../index.html">Inicio</a>
-						
-						
-						<!--btn de actividades solo aparece cuando estoy en mobile-->
-						<a
-							href="../actividades/indexActividades.html"
-							class="actividades">
-							Actividades</a
-						>
-						<a href="../Nutricion/indexNutricion.html">Nutrición</a>
-						
-						
-					
-				</nav>
-	
-			 <!-- Inicio del menu mobile tipo hamburguesa-->
-	
-	
-	
-			 <!-- Botón de menu tipo hamburguesa. Aparecerá solo en modo mobile. -->
-			 <div class="btn-menu mobile" id="btn-menu" onclick="Menu()">
+		<!-- INICIO DE HEADER -->
+		<header>
+			<img
+				class="logoSinLimites"
+				src="../imagenes/logoSL.jpg"
+				alt="sinLimitesGym" />
+
+			<nav class="menu">
+				<a href="../index.html">Inicio</a>
+				<a href="../actividades/indexActividades.html">Actividades</a>
+				<a href="../nutricion/indexNutricion.html">Nutrición</a>
+				<a href="../contacto/indexContacto.html">Contacto </a>
+			</nav>
+
+			<!-- Inicio del menu mobile tipo hamburguesa-->
+
+			<!-- Botón de menu tipo hamburguesa. Aparecerá solo en modo mobile. -->
+			<div class="btn-menu mobile" id="btn-menu" onclick="Menu()">
 				<!-- dentro ponemos 3 div, uno para cada línea -->
 				<div class="linea"></div>
 				<div class="linea"></div>
 				<div class="linea"></div>
-			  </div>
-	  
-			  <!-- Lista de botones para el menu mobile -->
-			  <nav class="btn-list mobile" id="btn-list">
+			</div>
+
+			<!-- Lista de botones para el menu mobile -->
+			<nav class="btn-list mobile" id="btn-list">
 				<a href="#">Redes Sociales</a>
-				<a href="../sinLimitesGym/Actividades/indexActividades.html">Actividades</a>
+				<a href="../sinLimitesGym/Actividades/indexActividades.html"
+					>Actividades</a
+				>
 				<a href="Nutricion/indexNutricion.html">Nutricion</a>
 				<a href="../sinLimitesGym/Contacto/indexContacto.html">Contacto</a>
-			  </nav>
-	
-			  <!--fin del menu mobile-->
-	
-			</header>
-	
+			</nav>
+
+			<!--fin del menu mobile-->
+		</header>
 
 		<form
-		method="post"
-		target="_blank"
+			method="post"
+			target="_blank"
 			action="https://www.cronoscentrotecnologico.com/cursos/programacion-web-nivel-1/formulario/generico.php">
 			<input type="hidden" name="asunto" value="Prueba de formulario" />
-			<input type="hidden" name="destino" value="mariodanielcena@gmail.com" />  
-		
-		
+			<input type="hidden" name="destino" value="mariodanielcena@gmail.com" />
+
 			Nombre
-			<input type="text" name="nombre" placeholder="Ingrese su nombre Completo" />
+			<input
+				type="text"
+				name="nombre"
+				placeholder="Ingrese su nombre Completo" />
 			Apellido
 			<input type="text" name="apellido" placeholder="Ingrese su apellido" />
 			Telefono
@@ -84,7 +75,7 @@
 
 			Mensaje
 			<textarea
-			    name="comentario"
+				name="comentario"
 				rows="25"
 				class="textMensaje"
 				placeholder='Escriba aquí su consulta,si es por la clase gratis ponga " Clase Gratis!!!! '></textarea>
@@ -99,7 +90,6 @@
 			</select>
 
 			<button type="submit">Enviar</button>
-			
 		</form>
 
 		<!--logo de Wasap-->
@@ -116,13 +106,21 @@
 
 		<!-- fin logo-->
 
-		<footer>Todos los derechos reservados 2022
-			<div class = redes_sociale>
+		<footer>
+			Todos los derechos reservados 2022
+			<div class="redes_sociale">
 				<h5>Siguenos en nuestras redes sociales</h5>
-				<img src="../imagenes/LogoFacebook.png" alt="facebook" id="cajaredsocial" onclick="facebook()">
-				<img src="../imagenes/LogoInstagram.png" alt="instagram" id="cajaredsocial" onclick="instagram()">
+				<img
+					src="../imagenes/LogoFacebook.png"
+					alt="facebook"
+					id="cajaredsocial"
+					onclick="facebook()" />
+				<img
+					src="../imagenes/LogoInstagram.png"
+					alt="instagram"
+					id="cajaredsocial"
+					onclick="instagram()" />
 			</div>
-		
 		</footer>
 	</body>
 </html>

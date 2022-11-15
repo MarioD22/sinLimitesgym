@@ -98,19 +98,24 @@ header {
 .fraseDelDia {
 	display: block;
 	height: 60px;
+	
 }
 
 p {
-	text-align: center;
-	margin: 0px auto;
-	padding: 20px;
-	margin-top: 10px;
+	width: 72%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 10px;
+    /* margin-bottom: 32px; */
+    border: 1px solid red;
 }
 
 span {
 	color: red;
-	border: 1px solid red;
+	
 	margin: 0px 3px 0px 0px;
+	padding: 4px;
 }
 
 /*Fin de frase del día*/
@@ -232,6 +237,11 @@ h5{
 	border-radius: 20px;
 }
 
+
+#cajaredsocial:hover{
+	cursor:pointer;
+  
+  }
 /*---------------------------------------------*/
 /*menu tipo hamburguesa*/
 

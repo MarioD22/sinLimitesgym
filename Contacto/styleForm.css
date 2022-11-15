@@ -1,8 +1,10 @@
 /*@import url(../style.css);
 */
-@import url(../nutricion/footer.css);
+/*@import url(../nutricion/footer.css);*/
+@import url(../footer.css);
 
-@import url(../contacto/querys.css);
+/*@import url(../contacto/querys.css);*/
+@import url(../querys.css);
 
 
 body {background-image: url(../imagenes/FondoHD2.jpg);

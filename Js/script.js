@@ -20,3 +20,10 @@ function Menu() {
 	}
 }
 
+function facebook(){
+window.open("https://www.facebook.com/profile.php?id=100014807742676")
+}
+
+function instagram(){
+window.open("https://www.instagram.com/sinlimites_training/")
+}
